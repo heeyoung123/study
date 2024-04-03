@@ -1,9 +1,18 @@
-import "./App.css";
-import PropsPractice from "./Ex";
+import React, { useState } from "react";
 
-function App() {
-  let data = { id: 4, pw: 8 };
-  return <PropsPractice props={data}></PropsPractice>;
-}
+const App = () => {
+  const [input, setInput] = useState("");
 
+  const onChange = (e) => setInput(e.target.value);
+  return (
+    <>
+      <input
+        onChange={onChange}
+        placeholder="문자를 입력해주세요"
+        value={input}
+      />
+      {input}
+    </>
+  );
+};
 export default App;
