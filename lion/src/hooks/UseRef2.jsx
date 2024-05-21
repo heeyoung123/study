@@ -13,6 +13,9 @@ const UseRef2 = () => {
   const startrender = () => {
     return setRender(render + 1);
   };
+  const printResults = () => {
+    console.log(`ref:${countRef.current}, var : ${countVar}`);
+  };
   return (
     <div>
       <p>Ref :{countRef.current}</p>
@@ -20,6 +23,7 @@ const UseRef2 = () => {
       <button onClick={increasecountRef}>ref올려</button>
       <button onClick={increasecountVar}>var올려</button>
       <button onClick={startrender}>랜더링</button>
+      <button onClick={printResults}>ref var 값 출력</button>
     </div>
   );
 };
