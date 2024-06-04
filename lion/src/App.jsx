@@ -5,13 +5,13 @@ import React from "react";
 //import UseRef2 from "./hooks/UseRef2.jsx";
 import Router from "./router/router.jsx";
 import { RouterProvider } from "react-router-dom";
-import Counter from "./components/counter.jsx";
+// import Counter from "./components/counter.jsx";
 
 const App = () => {
   return (
     <div>
-      {/* <RouterProvider router={Router} /> */}
-      <Counter />
+      <RouterProvider router={Router} />
+      {/* <Counter /> */}
     </div>
   );
 };
